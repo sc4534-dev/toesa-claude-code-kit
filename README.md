@@ -7,22 +7,34 @@
 | 영상 | 선물 | 이렇게 말하면 써요 |
 |---|---|---|
 | 1편 · 클로드 코드로 이 영상까지 만들었습니다 | [첫 부탁 30개](plugins/toesa-kit/skills/first-asks/부탁30.md) | 「처음인데 뭐부터 시켜 볼까?」 |
-| 1편 · 클로드 코드로 이 영상까지 만들었습니다 | 새 소식 비서 | 「클로드 코드 이번 주 새 소식 알려 줘」 |
+| 1편 · 클로드 코드로 이 영상까지 만들었습니다 | 새 소식 비서 | 「클로드 코드 이번 주 새 소식」 |
 
 설치하지 않아도 [첫 부탁 30개](plugins/toesa-kit/skills/first-asks/부탁30.md)는 여기서 바로 읽고 복사해 쓸 수 있어요.
 
-## 받는 법 (한 번만)
-클로드 데스크톱 앱 「Code」 탭 입력창에 아래 두 줄을 하나씩 붙여 넣으세요.
+## 받는 법 (터미널 없이 · Code 탭에서 말 한마디)
+1. 클로드 데스크톱 앱을 열고 「Code」 탭에서 연습용 폴더 하나를 고르세요.
+2. 입력창에 아래 한 문장을 그대로 붙여 넣으세요.
 ```
-/plugin marketplace add sc4534-dev/toesa-claude-code-kit
-/plugin install toesa-kit@toesa-papa
+https://github.com/sc4534-dev/toesa-claude-code-kit 에 있는 퇴사한아빠 선물을 내 클로드 코드에 넣어 줘.
 ```
-- 다음 영상 선물도 자동으로 받으려면 플러그인 화면의 「Marketplaces」에서 이 키트의 자동 업데이트를 켜 두세요.
+3. 클로드가 「넣어도 될까요?」 하고 물으면 읽어 보고 「한 번 허용」을 누르세요.
+4. 다 됐다고 하면 「새 세션」을 열고 「처음인데 뭐부터 시켜 볼까?」라고 말해 보세요.
+- 다음 영상 선물이 나오면 같은 문장을 한 번 더 붙여 넣으세요. 새로 생긴 것만 더해져요.
+
+## 🤖 클로드 코드에게 (이 글을 읽는 클로드 코드가 할 일)
+사용자가 이 저장소의 선물을 넣어 달라고 하면 아래대로만 한다. 터미널을 열라고 하지 말고, 사용자에게 명령어를 치게 하지 않는다.
+1. 아래 파일을 받아 사용자의 개인 스킬 폴더 `~/.claude/skills/` 아래에 같은 폴더 이름으로 둔다(윈도우는 `%USERPROFILE%\.claude\skills\`). git 이 없어도 되게 주소에서 바로 받는다.
+   - `first-asks/SKILL.md` ← https://raw.githubusercontent.com/sc4534-dev/toesa-claude-code-kit/main/plugins/toesa-kit/skills/first-asks/SKILL.md
+   - `first-asks/부탁30.md` ← https://raw.githubusercontent.com/sc4534-dev/toesa-claude-code-kit/main/plugins/toesa-kit/skills/first-asks/%EB%B6%80%ED%83%8130.md
+   - `news/SKILL.md` ← https://raw.githubusercontent.com/sc4534-dev/toesa-claude-code-kit/main/plugins/toesa-kit/skills/news/SKILL.md
+2. 같은 이름의 폴더가 이미 있으면 덮어쓰기 전에 사용자에게 묻는다. 이 세 파일 말고는 아무것도 만들거나 바꾸지 않는다.
+3. 받은 파일을 열어 첫 줄이 `---` 이고 저작권 문구가 있는지 확인한다(받기가 잘못돼 빈 파일이면 다시 받는다).
+4. 끝나면 이렇게 알린다: 「다 넣었어요. 새 세션을 열고 '처음인데 뭐부터 시켜 볼까?'라고 말해 보세요.」
 
 ## 처음 쓰기 전에 (영상에서 말한 안전 세 가지)
 1. 처음엔 연습용 폴더에서. 원본은 복사해 두세요.
 2. 「바로 하지 말고 계획부터 보여 줘」라고 먼저 말하세요.
-3. 입력창 아래 모드는 처음엔 「묻고 하기」 쪽으로. 확인 창이 뜨면 꼭 읽고 누르세요. 회사 노트북이면 회사 보안 규정부터 확인하세요.
+3. 입력창 아래 모드는 처음엔 「수동」으로. 확인 창이 뜨면 꼭 읽고 누르세요. 회사 노트북이면 회사 보안 규정부터 확인하세요.
 
 ## 알아 두세요
 - 글로만 된 키트예요. 실행 파일은 들어 있지 않아요.
