@@ -20,6 +20,7 @@ https://github.com/sc4534-dev/toesa-claude-code-kit 에 있는 퇴사한아빠 �
 3. 클로드가 「넣어도 될까요?」 하고 물으면 읽어 보고 「한 번 허용」을 누르세요.
 4. 다 됐다고 하면 「새 세션」을 열고 「처음인데 뭐부터 시켜 볼까?」라고 말해 보세요.
 - 다음 영상 선물이 나오면 같은 문장을 한 번 더 붙여 넣으세요. 새로 생긴 것만 더해져요.
+- 맥 · 윈도 모두 같은 문장이에요. 터미널은 열 필요 없어요.
 
 ## 🤖 클로드 코드에게 (이 글을 읽는 클로드 코드가 할 일)
 사용자가 이 저장소의 선물을 넣어 달라고 하면 아래대로만 한다. 터미널을 열라고 하지 말고, 사용자에게 명령어를 치게 하지 않는다.
@@ -27,6 +28,7 @@ https://github.com/sc4534-dev/toesa-claude-code-kit 에 있는 퇴사한아빠 �
    - `first-asks/SKILL.md` ← https://raw.githubusercontent.com/sc4534-dev/toesa-claude-code-kit/main/plugins/toesa-kit/skills/first-asks/SKILL.md
    - `first-asks/부탁30.md` ← https://raw.githubusercontent.com/sc4534-dev/toesa-claude-code-kit/main/plugins/toesa-kit/skills/first-asks/%EB%B6%80%ED%83%8130.md
    - `news/SKILL.md` ← https://raw.githubusercontent.com/sc4534-dev/toesa-claude-code-kit/main/plugins/toesa-kit/skills/news/SKILL.md
+   - 윈도우에서는 PowerShell 의 `Invoke-WebRequest -Uri <주소> -OutFile <자리>`(또는 `curl.exe -L -o <자리> <주소>`)로 받고, 폴더가 없으면 `New-Item -ItemType Directory -Force` 로 먼저 만든다. 파일은 UTF-8 그대로 둔다.
 2. 같은 이름의 폴더가 이미 있으면 덮어쓰기 전에 사용자에게 묻는다. 이 세 파일 말고는 아무것도 만들거나 바꾸지 않는다.
 3. 받은 파일을 열어 첫 줄이 `---` 이고 저작권 문구가 있는지 확인한다(받기가 잘못돼 빈 파일이면 다시 받는다).
 4. 끝나면 이렇게 알린다: 「다 넣었어요. 새 세션을 열고 '처음인데 뭐부터 시켜 볼까?'라고 말해 보세요.」
